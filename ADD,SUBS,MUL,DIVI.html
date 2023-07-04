@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                function promptNumber()
+                 {
+                    var number = prompt("ENTER A NUMBER: ");
+                    return parseFloat(number):
+                 }
+                 function performOperation(operator, num1, num2)
+                 {
+                    switch(operator)
+                    { 
+                        case "+": 
+                        return num1 + num2;
+                        case "-": 
+                        return num1 - num2;
+                        case "*": 
+                        return num1 * num2;
+                        case "/": 
+                        return num1 / num2;
+                        default: 
+                        return "Invalid operator";
+                    }
+                 }
+                 function x()
+                 { 
+                    var num1 = promptNumber();
+                    var num2 = promptNumber();
+                    var operator = prompt(" ENTER THE OPERATOR (+, -, *, /):");
+
+                    var result = performOperation(operator, num1, num2);
+                    alert(" The result is: " + result);
+                 }
+                 
+
+  
+                   
+
+
+                    
+            </script>
+        </body>
+    </head>
+</html>
