@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                function getYearOfBirth(nicNumber) 
+                {
+
+  
+                    // Get the first two digits of the NIC number.
+                    var yearOfBirth = nicNumber.substring(0, 2);
+
+                    // Convert the string to an integer.
+                    yearOfBirth = parseInt(yearOfBirth);
+
+                    // Return the year of birth.
+                    return yearOfBirth;
+
+                }
+
+                function main() {
+  
+                    // Prompt the user to enter the NIC number.
+                    var nicNumber = prompt("Enter the NIC number: ");
+
+                    // Get the year of birth.
+                    var yearOfBirth = getYearOfBirth(nicNumber);
+
+                    // Display the year of birth.
+                    alert("The year of birth is: " + yearOfBirth);
+
+                }
